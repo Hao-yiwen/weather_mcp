@@ -1,10 +1,10 @@
 {
-  "name": "weather",
+  "name": "@ctrip/crn-mcp-server",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "weather": "./build/index.js"
+    "crn-mcp": "./build/index.js"
   },
   "scripts": {
     "build": "tsc && chmod 755 build/index.js"
@@ -17,10 +17,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.7.0",
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
     "@types/node": "^22.13.13",
     "typescript": "^5.8.2"
   }
